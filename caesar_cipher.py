@@ -14,6 +14,9 @@ def encrypt(plain_text, shift_amount):
 def decrypt(plain_text, shift_amount):
   decoded_text = ""
   for letter in plain_text:
+    if letter not in alphabet:
+      break
+      print("Wrong input!")
     alph_position = alphabet.index(letter)
     shifted_position = alph_position - shift_amount
     decoded_text += alphabet[shifted_position]
