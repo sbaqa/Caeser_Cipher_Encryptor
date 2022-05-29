@@ -24,25 +24,26 @@ def decrypt(plain_text, shift_amount):
 
 
 #Program run depending to user's input choice
-def call_caesar_cipher():
-  print(logo)
-  direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-  text = input("Type your message:\n").lower()
-  shift = int(input("Type the shift number:\n"))
-  if shift > len(alphabet):
-    shift = shift % 26
-  if direction == "encode":
-    encrypt(plain_text=text, shift_amount=shift)
-  elif direction == "decode":
-    decrypt(plain_text=text, shift_amount=shift)
+def call_caesar_cipher(action, message, action_num):
+  if action_num > len(alphabet):
+    action_num = action_num % 26
+  if action == "encode":
+    encrypt(plain_text=message, shift_amount=action_num)
+  elif action == "decode":
+    decrypt(plain_text=message, shift_amount=action_num)
   else:
     print("Wrong action input, please type 'encode' or 'decode' in CLI to run the program properly...")
 
-call_caesar_cipher()
+def run_program():
+  print(logo)
+  run_again = True
+  while run_again:
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+    text = input("Type your message:\n").lower()
+    shift = int(input("Type the shift number:\n"))
+    call_caesar_cipher(direction, text, shift)
+    run_program = input("Do you want to restart the program? Type 'yes' or 'no' please...\n").lower()
+    if run_program == "no":
+      run_again = False
 
-def run_program_again():
-  run_program = input("Do you want to restart the program? Type 'yes' or 'no' please...\n").lower()
-  while run_program == "yes":
-    call_caesar_cipher()
-    
-run_program_again()
+run_program()
