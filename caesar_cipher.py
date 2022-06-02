@@ -42,8 +42,9 @@ def run_program():
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
     call_caesar_cipher(direction, text, shift)
-    run_program = input("Do you want to restart the program? Type 'yes' or 'no' please...\n").lower()
-    if run_program == "no":
+    restart_program = input("Do you want to restart the program? Type 'yes' or 'no' please...\n").lower()
+    if restart_program == "no":
       run_again = False
+      print("Goodbye!")
 
 run_program()
