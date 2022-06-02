@@ -1,6 +1,6 @@
-from helper import logo
-from helper import alphabet
-from helper import encrypt, decrypt
+from data.helper import logo
+from data.helper import alphabet
+from data.helper import encrypt, decrypt
 
 # Check user's input choice
 def call_caesar_cipher(action, message, action_num):
