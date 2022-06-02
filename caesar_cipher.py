@@ -1,5 +1,5 @@
-from ui_view import logo
-from ui_view import alphabet
+from helper import logo
+from helper import alphabet
 
 #Encrypt your message
 def encrypt(plain_text, shift_amount):
