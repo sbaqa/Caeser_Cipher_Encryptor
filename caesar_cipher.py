@@ -13,7 +13,7 @@ def call_caesar_cipher(action, message, action_num):
   else:
     print("Wrong action input, please type 'encode' or 'decode' in CLI to run the program properly...")
 
-# Run program, receive input and check if user wants restart program
+# Run program, receive input and check if user wants to restart program
 def run_program():
   print(logo)
   run_again = True
