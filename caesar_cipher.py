@@ -5,7 +5,7 @@ from data.helper import encrypt, decrypt
 # Check user's input choice
 def call_caesar_cipher(action, message, action_num):
   if action_num > len(alphabet):
-    action_num = action_num % 26
+    action_num = action_num % 26  # alphabet has 26 characters
   if action == "encode":
     encrypt(plain_text=message, shift_amount=action_num)
   elif action == "decode":
