@@ -1,4 +1,4 @@
-## Encrypt or decript your data with Caeser_Cipher_Encryptor app https://replit.com/@SviatoslavBordovski/Caesar-Cipher-Encryptor
+## Encrypt or decrypt your data with Caeser_Cipher_Encryptor app https://replit.com/@SviatoslavBordovski/Caesar-Cipher-Encryptor
 # 🔐 Caesar Cipher Encryptor
 
 Welcome to the **Caesar Cipher Encryptor**!  
@@ -28,12 +28,6 @@ This method was reportedly used by Julius Caesar to communicate with his general
 
 ---
 
-## 📂 Project Structure
-
-
-
----
-
 ## 🛠️ Getting Started
 
 Follow these steps to set up and run the application locally:
@@ -49,11 +43,13 @@ Follow these steps to set up and run the application locally:
    ```bash
    git clone https://github.com/sbaqa/Caeser_Cipher_Encryptor.git
    cd Caeser_Cipher_Encryptor
+   ```
 
 2. **Create and activate a virtual environment:**
   ```bash
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
 3. **Run program**
   ```bash
