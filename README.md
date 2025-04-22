@@ -59,7 +59,7 @@ Follow these steps to set up and run the application locally:
 ### 🧪 Example Usage
 
 ```shell
-Do you want to (E)ncrypt or (D)ecrypt? E
+Do you want to Encode or Decode? 
 Enter your message: Hello World
 Enter shift value (1-25): 3
 Encrypted message: Khoor Zruog
