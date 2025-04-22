@@ -46,15 +46,15 @@ Follow these steps to set up and run the application locally:
    ```
 
 2. **Create and activate a virtual environment:**
-  ```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
 3. **Run program**
-  ```bash
-python caesar_cipher.py
-
+   ```bash
+   python caesar_cipher.py
+   ```
 
 ### 🧪 Example Usage
 
@@ -63,4 +63,4 @@ Do you want to (E)ncrypt or (D)ecrypt? E
 Enter your message: Hello World
 Enter shift value (1-25): 3
 Encrypted message: Khoor Zruog
-
+```
